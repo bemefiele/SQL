@@ -1,14 +1,26 @@
 -- create a cookie store database 
 create table cookies (id integer primary key, name text, quantity integer, rating integer);
 
-insert into cookies values (1, "chocolate chip", 3, 4.9);
-insert into cookies values (2,"sugar cookies", 4, 4.5);
-insert into cookies values (3, "m&m", 3, 4.3);
-insert into cookies values (4, "macadamian", 3, 3.7);
-insert into cookies values (5, "peanut butter", 4, 3.7);
+insert into cookies 
+values (1, "chocolate chip", 3, 4.9);
+
+insert into cookies 
+values (2,"sugar cookies", 4, 4.5);
+
+insert into cookies 
+values (3, "m&m", 3, 4.3);
+
+insert into cookies 
+values (4, "macadamian", 3, 3.7);
+
+insert into cookies 
+values (5, "peanut butter", 4, 3.7);
 
 -- display the database ordered by rating 
-select * from cookies order by rating;
+select * 
+from cookies 
+order by rating;
 
 -- what is the average rating of all cookies?
-select avg (rating) from cookies
+select avg (rating) 
+from cookies
